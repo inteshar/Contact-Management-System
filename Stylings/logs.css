@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+*{
+    font-family: 'Play', sans-serif;
+}
+
+body{
+    background-image: url(../images/logs_back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcome{
+    text-align: center;
+
+}
+
+table{
+    margin: 5% 0 0 25%;
+    background-color: rgba(0, 0, 0, 0.541);
+    height: 500px;
+    width: 800px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+}
+
+thead{
+    margin-left: 10px;
+    background-color: rgba(0, 0, 0, 0.867);
+    overflow: auto;
+}
+
+#content {
+    margin:500px;
+    height: 800px;
+    width: 2000px;
+    background: coral;
+    position: relative;
+  }
+
+th{
+    font-size: 23px;
+
+}
+.msg{
+    text-align: center;
+}

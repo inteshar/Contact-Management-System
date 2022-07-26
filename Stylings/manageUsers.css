@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+*{
+    font-family: 'Play', sans-serif;
+}
+
+body{
+    background-image: url(../images/logs_back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcome{
+    text-align: center;
+
+}
+
+table{
+    margin: 5% 0 0 22%;
+    background-color: rgba(0, 0, 0, 0.541);
+    height: 500px;
+    width: 800px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+}
+
+thead{
+    margin-left: 10px;
+    background-color: rgba(0, 0, 0, 0.867);
+}
+
+th{
+    font-size: 16px;
+    height: fit-content;
+}
+
+td{
+    padding: 5px;
+    border-style:ridge;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.504);
+    border-left: 1px solid rgba(255, 255, 255, 0.504);
+    border-right: 1px solid rgba(255, 255, 255, 0.504);
+}
+
+td a{
+    text-decoration: none;
+    color: rgb(108, 191, 216);
+    cursor: pointer;
+}
+
+.edit{
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 55px;
+    margin: 5px;
+}
+
+.edit button{
+    background-color: rgb(64, 137, 72);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    
+}
+
+.delete{
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 55px;
+    margin: 5px;
+}
+
+.delete button{
+    background-color: rgb(223, 75, 75);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    
+}
+
+.msg{
+    text-align: center;
+}
+
+.inputs{
+    visibility: hidden;
+}

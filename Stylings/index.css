@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+*{
+    font-family: 'Play', sans-serif;
+}
+
+body{
+    background-color: rgb(99, 120, 152);
+}
+
+.project_name{
+    text-align: center;
+    font-size: 52px;
+}
+
+.form{
+    padding: 5%;
+    font-size: 23px;
+    width: fit-content;
+    float: left;
+}
+
+form{
+    background-color: black;
+    border-radius: 10px;
+    width: 350px;
+    height: fit-content;
+    padding: 20px;
+}
+
+form input{
+    height: 30px;
+    width: 100%;
+}
+
+img{
+    height: 70px;
+    width: 70px;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.email{
+    color: #ffff;
+    width: 250px;
+    height: fit-content;
+    margin: 0 0 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pass{
+    color: #ffff;
+    width: 250px;
+    height: fit-content;
+    margin: 0 0 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.userType{
+    color: #ffff;
+    width: 250px;
+    height: fit-content;
+    margin: 0 0 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submit{
+    height: 30px;
+    width: 60px;
+    margin-left: 40%;
+    font-weight: bold;
+}
+
+.about{
+    float: right;
+    margin: -23% 50px 0 35%;
+}
