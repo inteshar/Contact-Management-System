@@ -38,7 +38,7 @@
     </div>
 
     <div class="form">
-        <h1>Add New User</h1>
+        <h1>Add New Contact</h1>
         <form action="addContactScript.php" method="POST" enctype="multipart/form-data">
 
             <div class="name">
