@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3308
--- Generation Time: Jul 26, 2022 at 08:30 AM
+-- Generation Time: Apr 27, 2024 at 04:32 PM
 -- Server version: 8.0.18
--- PHP Version: 7.3.12
+-- PHP Version: 7.4.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -46,7 +46,7 @@ CREATE TABLE IF NOT EXISTS `admin` (
 --
 
 INSERT INTO `admin` (`id`, `name`, `mobile`, `email`, `pass`, `address`, `reg_date`) VALUES
-(1, 'tridev', '9807917302', 'tridevshrestha@gmail.com@gmail.com', 'Tridev@321', 'Kathmandu', '2022-07-24 06:20:49');
+(1, 'tridev', '9807917302', 'tridevshrestha@gmail.com', 'Tridev@321', 'Kathmandu', '2022-07-24 06:20:49');
 
 -- --------------------------------------------------------
 
@@ -65,7 +65,7 @@ CREATE TABLE IF NOT EXISTS `contacts` (
   `createDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   UNIQUE KEY `email` (`email`,`mobile`)
-) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `contacts`
@@ -73,7 +73,8 @@ CREATE TABLE IF NOT EXISTS `contacts` (
 
 INSERT INTO `contacts` (`id`, `user_id`, `contactName`, `email`, `mobile`, `address`, `createDate`) VALUES
 (7, '54', 'Mohammad Inteshar Alam', 'intesharalam01@gmail.com', '6201953179', 'Roorkee', '2022-07-26 08:09:23'),
-(8, '54', 'Luv Kumar Mahto', 'luvkumarmahto05@gmail.com', '7324830993', 'Roorkee', '2022-07-26 08:09:32');
+(8, '54', 'Luv Kumar Mahto', 'luvkumarmahto05@gmail.com', '7324830993', 'Roorkee', '2022-07-26 08:09:32'),
+(9, '55', 'Inteshar', 'inteshar@gmail.com', '2654645445', 'Nepal', '2023-08-11 09:11:06');
 
 -- --------------------------------------------------------
 
@@ -88,13 +89,15 @@ CREATE TABLE IF NOT EXISTS `logs` (
   `message` varchar(200) NOT NULL,
   `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`log_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=87 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=90 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `logs`
 --
 
 INSERT INTO `logs` (`log_id`, `user_id`, `message`, `time`) VALUES
+(89, '55', 'Hemant Saini has added new contact named Inteshar', '2023-08-11 09:11:06'),
+(88, '', 'tridev has added Hemant Saini', '2023-08-11 09:09:09'),
 (86, '52', 'Tridev Shrestha has updated their details.', '2022-07-26 08:27:18'),
 (85, '54', 'Madan Kumar Thakur has updated their details.', '2022-07-26 08:24:20'),
 (84, '54', 'Madan Kumar Thakur has updated their details.', '2022-07-26 08:23:28'),
@@ -125,13 +128,14 @@ CREATE TABLE IF NOT EXISTS `users` (
   `reg_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   UNIQUE KEY `email` (`email`)
-) ENGINE=MyISAM AUTO_INCREMENT=55 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=56 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `mobile`, `pass`, `address`, `id_proof`, `reg_date`) VALUES
+(55, 'Hemant Saini', 'hemant@gmail.com', '5615646541', '123456', 'India', 'Rohit Ticker.pdf', '2023-08-11 09:09:09'),
 (54, 'Madan Kumar Thakur', 'madankumartha245@gmail.com', '4356547347', '4356547347', 'Roorkee', 'Study in India.docx', '2022-07-26 08:07:18'),
 (52, 'Tridev Shrestha', 'tridevshrestha@gmail.com', '9807917302', 'tridevshres', 'Kathmandu', 'Free-CV-template.pdf', '2022-07-26 08:04:37'),
 (53, 'Luv Kumar Mahto', 'luvkumarmahto05@gmail.com', '7324830993', '7324830993', 'Roorkee', 'cloud computing questions1.pdf', '2022-07-26 08:06:08');
